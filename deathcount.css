@@ -1,0 +1,246 @@
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+    color: white;
+    background: black;
+    background: -moz-linear-gradient(top, #0a0a0a, #2a2a2a);
+    background: -webkit-gradient(linear, 40% bottom, 70% top, from(#2a2a2a), to(#0a0a0a));
+}
+
+h1 {
+    margin: 50px auto;
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: #666;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.banner {
+    margin: 15px 0;
+    padding: 10px;
+    background: #efefef;
+    color: black;
+}
+
+.banner a {
+    color: black;
+}
+
+#wrapper {
+    width: 400px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+#footer {
+    height: 100px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+#sources {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#sources a {
+    text-decoration: none;
+}
+
+#sources a:hover {
+    text-decoration: underline;
+}
+
+#sources th, 
+#sources td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #666;
+}
+
+#sources th {
+    text-align: left;
+}
+
+#sources td {
+    text-align: center;
+}
+
+
+#counter {
+    margin: 50px auto 100px;
+    position: relative;
+    width: 490px;
+    height: 215px;
+    
+    background: -moz-linear-gradient(top, #000, #121212);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#121212));
+    -moz-box-shadow: 5px 5px 30px rgba(200, 200, 200, .05), 0 -5px 20px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 5px 5px 30px rgba(200, 200, 200, .05), 0 -5px 20px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 30px rgba(200, 200, 200, .05), 0 -5px 20px rgba(0, 0, 0, 0);
+    
+    -moz-border-radius: 31px;
+    -webkit-border-radius: 31px;
+    border-radius: 31px;
+}
+
+#counter:before, 
+#counter:after, 
+#counter .deaths:after, 
+#counter .injuries:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 200;
+    top: 90px;
+    width: 3px;
+    height: 50px;
+    
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: -moz-linear-gradient(top,  #000, #424242 35%, #363636 52%, #000);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(.35, #424242), color-stop(.52, #363636), to(#000));
+    border: 1px solid #000;
+    -moz-box-shadow: -1px -1px 0 rgba(0, 0, 0, .2), 1px 1px 0 rgba(255, 255, 255, .05) inset, 1px 0 10px rgba(0, 0, 0, 1), 1px 1px 0 rgba(255, 255, 255, .06);
+    -webkit-box-shadow: -1px -1px 0 rgba(0, 0, 0, .2), 1px 1px 0 rgba(255, 255, 255, .05) inset, 1px 0 10px rgba(0, 0, 0, 1), 1px 1px 0 rgba(255, 255, 255, .06);
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, .2), 1px 1px 0 rgba(255, 255, 255, .05) inset, 1px 0 10px rgba(0, 0, 0, 1), 1px 1px 0 rgba(255, 255, 255, .06);
+}
+
+#counter:before {
+    left: 9px;
+}
+
+#counter:after {
+    right: 9px;
+}
+
+#counter .deaths:after {
+    top: 80px;
+    right: 0px;
+}
+
+#counter .injuries:after {
+    top: 80px;
+    left: 0px;
+}
+
+
+#counter .deaths,
+#counter .injuries {
+    height: 197px;
+    overflow: hidden;
+    
+    background: #333;
+    background: -moz-linear-gradient(top -80deg,  #383838, #111 50%, #363636);
+    background: -webkit-gradient(linear, 30% top, 70% bottom, from(#383838), color-stop(.5, #111), to(#363636));
+    
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 1) inset, 0 2px 0 rgba(255, 255, 255, .1) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 1) inset, 0 2px 0 rgba(255, 255, 255, .1) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 1) inset, 0 2px 0 rgba(255, 255, 255, .1) inset;
+    
+    font-weight: 600;
+    font-size: 171px;
+    text-align: center;
+    letter-spacing: -10px;
+    line-height: 171px;
+}
+
+#counter .deaths {
+    width: 195px;
+    /*padding-right: 15px;*/
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    
+    -moz-border-radius: 24px 0 0 24px;
+    -webkit-border-radius: 24px 0 0 24px;
+    border-radius: 24px 0 0 24px;
+    border-right: 1px solid #000;
+    text-indent: -10px;
+}
+
+#counter .injuries {
+    width: 250px;
+    padding-left: 26px;
+    position: absolute;
+    top: 8px;
+    left: 205px;
+    
+    -moz-border-radius: 0 24px 24px 0;
+    -webkit-border-radius: 0 24px 24px 0;
+    border-radius: 0 24px 24px 0;
+    text-indent: -30px;
+}
+
+#counter .deaths:before,
+#counter .injuries:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 105px;
+    
+    background: -moz-linear-gradient(top,  rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, .4));
+    background: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .4)));
+    border-bottom: 1px solid #000;
+    -moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .04), 0 5px 100px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .04), 0 5px 100px rgba(255, 255, 255, .3);
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .2) inset, 0 1px 0 rgba(255, 255, 255, .04), 0 5px 100px rgba(255, 255, 255, .3);
+    
+    pointer-events: none;
+}
+
+#counter .deaths:before {
+    width: 200px;
+}
+
+#counter .injuries:before {
+    width: 280px;
+}
+
+
+#counter .labels {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    
+    bottom: 25px;
+    left: 20px;
+}
+
+#counter .labels span {
+    display: block;
+    float: left;
+    width: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+#counter .label-injuries {
+    width: 280px !important;
+}
